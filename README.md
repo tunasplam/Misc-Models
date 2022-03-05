@@ -2,6 +2,8 @@
 Some Miscellaneous Machine Learning Models that I have Made
 Some of these mdoels require the OpenML python api in order to function. Since the API key is not included, some of the functions in the notebook may not work for another user.
 
+# Why are all the axes labels white???
+Sorry, I use dark mode for jupyter notebook on my local machine. This means that in order to read the axes tick marks and titles I need to use white font.
 
 # liver-disorders
 Based on a dataset from OpenML. The goal was to predict the amount of drinks a person averaged daily based on a variety of liver samples. After a bit of EDA I decided on using a sklearn pipeline involving several data transformations, some automatic feature selection, and a Poisson Regression model. A grid search was used to optimize many parameters. A custom Log Transfomer class was used because openml's api does not work with numpy's log transform function as it does not follow sklearn's coding guidelines. To get around this, I had to make a simple log transformer class for sklearn.
